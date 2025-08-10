@@ -22,9 +22,11 @@ export function Navigation() {
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">AC</span>
-          </div>
+          <img 
+            src="/lovable-uploads/328b2501-3107-46bc-8b08-75acd646e9ad.png" 
+            alt="A.C.A.P Logo" 
+            className="h-8 w-8"
+          />
           <span className="font-bold text-xl text-foreground">A.C.A.P</span>
         </Link>
 
