@@ -23,7 +23,7 @@ export function Navigation() {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/328b2501-3107-46bc-8b08-75acd646e9ad.png" 
+            src="/lovable-uploads/47307aa8-2aac-429d-ba9f-c94c522f7761.png" 
             alt="A.C.A.P Logo" 
             className="h-8 w-8"
           />
