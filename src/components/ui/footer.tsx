@@ -12,7 +12,7 @@ export function Footer() {
               <div className="h-8 w-8 rounded-lg bg-accent flex items-center justify-center">
                 <span className="text-accent-foreground font-bold text-sm">AC</span>
               </div>
-              <span className="font-bold text-xl">A.C.A.P</span>
+              <span className="font-bold text-xl">A.C.A.P Solutions</span>
             </div>
             <p className="text-secondary-foreground/80 leading-relaxed">
               Connecting trusted service providers with clients across Africa. 
@@ -82,7 +82,7 @@ export function Footer() {
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-secondary-foreground/60">
-            © 2024 A.C.A.P. All rights reserved. Building stronger communities through service.
+            © 2024 A.C.A.P Solutions. All rights reserved. Building stronger communities through service.
           </p>
         </div>
       </div>

@@ -27,7 +27,7 @@ export function Navigation() {
             alt="A.C.A.P Logo" 
             className="h-8 w-8"
           />
-          <span className="font-bold text-xl text-foreground">A.C.A.P</span>
+          <span className="font-bold text-xl text-foreground">A.C.A.P Solutions</span>
         </Link>
 
         {/* Desktop Navigation */}

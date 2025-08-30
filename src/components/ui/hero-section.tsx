@@ -1,16 +1,44 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-background.jpg";
+import { useState, useEffect } from "react";
+import marthaMaid from "@/assets/Martha Maid.png";
+import gardenBoy from "@/assets/Garden Boy.png";
+import carelCarpenter from "@/assets/Carel Carpenter.png";
 
 export function HeroSection() {
+  // Array of background images for the slideshow
+  const backgroundImages = [
+    marthaMaid,
+    gardenBoy,
+    carelCarpenter
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Auto-advance slideshow every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   return (
     <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      />
-      
+      {/* Background Images with Slideshow */}
+      {backgroundImages.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      ))}
+
       {/* Gradient Overlay */}
       <div className="absolute inset-0 hero-gradient opacity-90" />
       
