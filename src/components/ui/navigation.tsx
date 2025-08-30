@@ -25,7 +25,7 @@ export function Navigation() {
           <img 
             src="/lovable-uploads/47307aa8-2aac-429d-ba9f-c94c522f7761.png" 
             alt="A.C.A.P Logo" 
-            className="h-8 w-8"
+            className="h-12 w-12"
           />
           <span className="font-bold text-xl text-foreground">A.C.A.P Solutions</span>
         </Link>
